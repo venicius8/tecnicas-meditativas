@@ -1,0 +1,30 @@
+body{
+    background: linear-gradient(to right, #43c44c, #96ec8c);
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.opcoes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    margin-top: 14px;
+    font-size: 20px;
+    width: 80%;
+    height: auto;
+    max-width: 400px;
+    padding: 3px;
+    background-color: rgb(184, 255, 222);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px;
+    transition: 0.25s;
+}
+
+button:hover{
+    background-color: rgb(139, 194, 168);
+}

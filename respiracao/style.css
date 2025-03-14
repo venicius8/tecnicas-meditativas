@@ -1,0 +1,47 @@
+body{
+    background: linear-gradient(to right, rgb(101, 163, 255), rgb(177, 236, 255));
+    color: rgb(0, 30, 30);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: auto;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    max-height: 80vh;
+}
+
+.circulo{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: movimento 10s infinite alternate ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@keyframes movimento {
+    0% {
+        width: 20%;
+        background-color: lightcyan;
+    }
+    20% {
+        width: 20%;
+        background-color: lightcyan;
+    }
+    80% {
+        width: 65%;
+        background-color: cyan;
+    }
+    100% {
+        width: 65%;
+        background-color: cyan;
+    }
+}
