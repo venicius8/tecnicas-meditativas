@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escutar sons naturais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Tente experimentar diferentes sons ao mesmo tempo</h1>
+    </header>
+    <section class="agua">
+        <audio id="agua" loop>
+            <source src="audio/agua.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse arquivo.
+        </audio>
+
+        <div class="menu">
+            <h2>Água</h2>
+            <button onclick="toggle('agua', this)">&#9654</button>
+        </div>
+        <div class="ajuste">
+            <label for="volumeAgua">Volume</label>
+            <input id="volumeAgua" type="range" min="0" max="1" step="0.01" onchange="document.getElementById('agua').volume = this.value">
+        </div>
+    </section>
+
+    <section class="chuva">
+        <audio id="chuva" loop>
+            <source src="audio/chuva.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse arquivo.
+        </audio>
+        
+        <div class="menu">
+            <h2>Chuva</h2>
+            <button onclick="toggle('chuva', this)">&#9654</button>
+        </div>
+        <div class="ajuste">
+            <label for="volumeChuva">Volume</label>
+            <input id="volumeChuva" type="range" min="0" max="1" step="0.01" onchange="document.getElementById('chuva').volume = this.value">
+        </div>
+    </section>
+    
+    <section class="grilo">
+        <audio id="grilo" loop>
+            <source src="audio/grilo.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse arquivo.
+        </audio>
+
+        <div class="menu">
+            <h2>Grilos</h2>
+            <button onclick="toggle('grilo', this)">&#9654</button>
+        </div>
+        <div class="ajuste">
+            <label for="volumeGrilo">Volume</label>
+            <input id="volumeGrilo" type="range" min="0" max="1" step="0.01" onchange="document.getElementById('grilo').volume = this.value">
+        </div>
+    </section>
+    
+    <section class="passaro">
+        <audio id="passaro" loop>
+            <source src="audio/passaro.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse arquivo.
+        </audio>
+        
+        <div class="menu">
+            <h2>Pássaros</h2>
+            <button onclick="toggle('passaro', this)">&#9654</button>
+        </div>
+        <div class="ajuste">
+            <label for="volumePassaro">Volume</label>
+            <input id="volumePassaro" type="range" min="0" max="1" step="0.01" onchange="document.getElementById('passaro').volume = this.value">
+        </div>
+    </section>
+    
+    <section class="fogo">
+        <audio id="fogo" loop>
+            <source src="audio/fogo.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse arquivo.
+        </audio>
+        
+        <div class="menu">
+            <h2>Fogo</h2>
+            <button onclick="toggle('fogo', this)">&#9654</button>
+        </div>
+        <div class="ajuste">
+            <label for="volumeFogo">Volume</label>
+            <input id="volumeFogo" type="range" min="0" max="1" step="0.01" onchange="document.getElementById('fogo').volume = this.value">
+        </div>
+    </section>
+
+    <section class="trovao">
+        <audio id="trovao" loop>
+            <source src="audio/trovao.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse arquivo.
+        </audio>
+        
+        <div class="menu">
+            <h2>Trovão</h2>
+            <button onclick="toggle('trovao', this)">&#9654</button>
+        </div>
+        <div class="ajuste">
+            <label for="volumeTrovao">Volume</label>
+            <input id="volumeTrovao" type="range" min="0" max="1" step="0.01" onchange="document.getElementById('trovao').volume = this.value">
+        </div>
+    </section>
+    
+    <button class="sair" onclick="history.back()">Sair</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

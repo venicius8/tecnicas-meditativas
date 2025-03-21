@@ -24,7 +24,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
 @keyframes movimento {
@@ -44,4 +43,27 @@ body{
         width: 65%;
         background-color: cyan;
     }
+}
+
+@media (min-width: 500px) {
+    .container{
+        margin-left: 30%;
+    }
+}
+
+.sair{
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(255, 251, 245);
+    border: 1px solid gray;
+    position: absolute;
+    margin-top: 70vh;
+    left: 10px;
+    transition: 0.25s;
+}
+
+.sair:hover{
+    background-color: rgb(233, 229, 225);
 }

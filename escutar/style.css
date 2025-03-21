@@ -1,0 +1,96 @@
+body{
+    background: linear-gradient(to left, rgb(214, 214, 214), rgb(255, 255, 255));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(143, 143, 143);
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px;
+    max-width: 600px;
+    transition: 0.25s;
+    margin: 0 5px 10px 5%;
+}
+
+section:hover{
+    border: 1px solid rgb(34, 34, 34);
+}
+
+button{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    width: 40px;
+    border-radius: 10px;
+}
+
+input{
+    cursor: grab;
+}
+
+input:active{
+    cursor: grabbing;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grilo{
+    background-color: rgb(201, 201, 201);
+}
+
+.chuva{
+    background-color: rgb(148, 219, 219);
+}
+
+.agua{
+    background-color: rgb(159, 178, 221);
+}
+
+.passaro{
+    background-color: rgb(224, 224, 139);
+}
+
+.fogo{
+    background-color: rgb(235, 186, 164);
+}
+
+.trovao{
+    background-color: rgb(244, 252, 255);
+}
+
+.ajuste{
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.ajusteOn{
+    height: 40px;
+}
+
+.sair{
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    left: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 251, 245);
+    transition: 0.25s;
+    margin-bottom: 30px;
+}
+
+.sair:hover{
+    background-color: rgb(233, 229, 225);
+}

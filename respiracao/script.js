@@ -28,12 +28,3 @@ function expire() {
 }
 
 esperar(2, inspire);
-
-
-let mensagem = document.getElementById("mensagem");
-setTimeout(() => {
-    mensagem.innerText = "Para sair, basta apenas clicar no círculo";
-    setTimeout(() => {
-        mensagem.innerText = "";
-    }, 10000);
-}, 10000);
